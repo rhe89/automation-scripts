@@ -1,0 +1,51 @@
+brew "azure-cli"
+brew "bat"
+brew "python@3.13"
+brew "certbot"
+brew "certifi", link: false
+brew "docker"
+brew "docker-compose"
+brew "findutils"
+brew "git"
+brew "gnu-sed"
+brew "helm"
+brew "icu4c@76"
+brew "jq"
+brew "k9s"
+brew "kubernetes-cli"
+brew "mas"
+brew "node"
+brew "redis"
+brew "unar"
+brew "yarn"
+brew "zsh-syntax-highlighting"
+cask "1password"
+cask "alfred"
+cask "betterdisplay"
+cask "bettermouse"
+cask "chatgpt"
+cask "discord"
+cask "elgato-stream-deck"
+cask "font-fira-code"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "jordanbaird-ice"
+cask "little-snitch"
+cask "microsoft-azure-storage-explorer"
+cask "multiviewer-for-f1"
+cask "orbstack"
+cask "powershell"
+cask "visual-studio-code"
+mas "1Password for Safari", id: 1569813296
+mas "AdGuard for Safari", id: 1440147259
+mas "Azure VPN Client", id: 1553936137
+mas "Dato", id: 1470584107
+mas "iMovie", id: 408981434
+mas "iStat Menus", id: 6499559693
+mas "Magnet", id: 441258766
+mas "Microsoft Outlook", id: 985367838
+mas "News Explorer", id: 1032670789
+mas "Numbers", id: 409203825
+mas "Slack", id: 803453959
+mas "Soro", id: 1550457805
+mas "TrashMe 3", id: 1490879410
