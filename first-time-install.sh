@@ -3,6 +3,10 @@ settingsDir=$2
 
 cd $automationScriptsDir
 
+echo "
+--------------------------------------------
+
+Pulling latest version from origin"
 git pull
 
 echo "

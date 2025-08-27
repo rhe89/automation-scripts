@@ -1,5 +1,5 @@
-brewfileName=$1
-automationScriptsDir=$2
+automationScriptsDir=$1
+brewfileName=$2
 
 cd $automationScriptsDir
 
