@@ -37,8 +37,9 @@ echo "
 
 Commiting and pushing changes to origin"
 
-git add *
-git commit -m "Settings exported"
+git add * &&
+git add .* &&
+git commit -m "Settings exported" &&
 git push
 
 echo "
