@@ -35,6 +35,8 @@ echo "
 Commiting and pushing changes to origin"
 
 echo pwd
+git add .zprofile
+git add .zshrc
 git add *
 git commit -m "Settings exported"
 git push
