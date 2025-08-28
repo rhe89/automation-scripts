@@ -25,7 +25,6 @@ cask "betterdisplay"
 cask "bettermouse"
 cask "chatgpt"
 cask "discord"
-cask "elgato-stream-deck"
 cask "font-fira-code"
 cask "iterm2"
 cask "jetbrains-toolbox"
@@ -38,7 +37,6 @@ cask "powershell"
 cask "visual-studio-code"
 mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
-mas "Azure VPN Client", id: 1553936137
 mas "Dato", id: 1470584107
 mas "iMovie", id: 408981434
 mas "iStat Menus", id: 6499559693
