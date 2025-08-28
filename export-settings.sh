@@ -1,7 +1,4 @@
-automationScriptsDir=$1
-brewfileName=$2
-
-cd $automationScriptsDir
+brewfileName=$1
 
 echo "
 --------------------------------------------
@@ -13,24 +10,24 @@ git pull
 echo "
 --------------------------------------------
 
-Copying latest .zprofile and .zshrc"
+Copying latest .zprofile and .zshrc from Home-folder"
 
-cp -r ~/.zshrc "$automationScriptsDir" 
-cp -r ~/.zprofile "$automationScriptsDir"
+cp -r ~/.zshrc . 
+cp -r ~/.zprofile .
 
 echo "
 --------------------------------------------
 
-Dumping casks, formulaes and apps to $brewfileName"
+Dumping casks, formulaes and apps to brewfile"
 
-brew bundle dump --force --no-vscode --file "$automationScriptsDir/$brewfileName"
+brew bundle dump --force --no-vscode --file $brewfileName
 
 echo "
 --------------------------------------------
 
 Exporting macOS defaults"
 
-sh "$automationScriptsDir/export-defaults.sh"
+sh export-defaults.sh
 
 echo "
 --------------------------------------------

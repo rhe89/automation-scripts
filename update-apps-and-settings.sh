@@ -1,7 +1,4 @@
-automationScriptsDir=$1
-brewfileName=$2
-
-cd $automationScriptsDir
+brewfileName=$1
 
 echo "
 --------------------------------------------
@@ -13,16 +10,16 @@ git pull
 echo "
 --------------------------------------------
 
-Executing 'cp -r ".zshrc" ~/'"
+Copying .zshrc to Home-folder"
 
-cp -r ".zshrc" ~/
+cp -r .zshrc ~/
 
 echo "
 --------------------------------------------
 
-Executing 'cp -r ".zprofile" ~/'"
+Copying .zprofile to Home-folder"
 
-cp -r ".zprofile" ~/
+cp -r .zprofile ~/
 
 echo "
 --------------------------------------------
@@ -34,31 +31,44 @@ brew update
 echo "
 --------------------------------------------
 
-Executing 'brew bundle cleanup --force --file $brewfileName"
+Uninstalling formulaes, casks and App Store Apps that are no longer present in Brewfile"
 
 brew bundle cleanup --force --file $brewfileName
 
 echo "
 --------------------------------------------
 
-Executing 'brew bundle install --file $brewfileName"
+Installing new formulaes, casks and App Store apps from brewfile"
 
-brew bundle install --file $brewfileName
-
-echo "
---------------------------------------------
-
-Executing 'import-defaults.sh'"
-
-sh "import-defaults.sh"
+brew bundle install --file $brewfileName --no-upgrade
 
 echo "
 --------------------------------------------
 
-Finding outdated formulaes and apps"
+Updating formulaes"
 
-brew outdated --casks --greedy; brew outdated --formulae; mas outdated
+brew upgrade --formula
+
+echo "
+--------------------------------------------
+
+Updating App Store apps"
+
+mas upgrade
+
+echo "
+--------------------------------------------
+
+Importing defaults"
+
+sh import-defaults.sh
+
+echo "
+--------------------------------------------
+
+Listing outdated casks, might be easier to update these manually"
+
+brew outdated --casks
 
 echo "
 --------------------------------------------"
-clear

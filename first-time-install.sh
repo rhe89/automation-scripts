@@ -13,7 +13,7 @@ git pull
 echo "
 --------------------------------------------
 
-Executing 'cp -r ".zshrc" ~/'"
+Copying .zshrc to Home-folder"
 
 cp -r ".zshrc" ~/
 source ~/.zshrc
@@ -21,7 +21,7 @@ source ~/.zshrc
 echo "
 --------------------------------------------
 
-Executing 'cp -r ".zprofile" ~/'"
+Copying .zprofile to Home-folder"
 
 cp -r ".zprofile" ~/
 source ~/.zprofile
@@ -29,14 +29,14 @@ source ~/.zprofile
 echo "
 --------------------------------------------
 
-Executing 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash'"
+Installing nvm"
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 echo "
 --------------------------------------------
 
-Executing '[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh"'"
+Configuring nvm"
 
 [ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh"  # This loads nvm 
 
@@ -47,21 +47,21 @@ echo "Executing '[ -s "$HOME/.nvm/bash_completion" ] && \. "$HOME/.nvm/bash_comp
 echo "
 --------------------------------------------
 
-Executing 'nvm install 22'"
+Installing node v22"
 
 nvm install 22
 
 echo "
 --------------------------------------------
 
-Executing 'brew bundle install --file $brewfileName'"
+Installing new formulaes, casks and App Store apps from brewfile"
 
 brew bundle install --file $brewfileName
 
 echo "
 --------------------------------------------
 
-Executing 'import-defaults.sh'"
+Importing defaults"
 
 sh "import-defaults.sh"
 
