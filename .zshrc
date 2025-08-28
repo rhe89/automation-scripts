@@ -100,12 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-export PATH="/usr/local/bin:$PATH"
 # If multiple users needs to use brew, brew as alias needs to be created per user (except for user where brew first was installed)  
 # alias brew='sudo -Hu [account-name-of-where-brew-first-was-installed] brew'
 
@@ -115,21 +110,8 @@ alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false 
 # alias rider="~/Library/Application Support/JetBrains/Toolbox/scripts/rider"
 
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias snippets="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/Code/snippets"
 alias list-outdated="brew outdated --casks --greedy; brew outdated --formulae; mas outdated"
 alias upgrade-outdated="brew upgrade --casks --greedy; brew upgrade --formulae; mas upgrade; brew cleanup"
-alias install="\
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Setup && \
-sh install.sh; \
-cd ~/"
-alias update="\
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Setup && \
-sh update.sh; \
-cd ~/"
-alias update-settings="\
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Setup && \
-sh update_settings.sh; \
-cd ~/"
 alias stats="\
 cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Code/snippets/bash && \
 sh print_macos_info.sh; \
