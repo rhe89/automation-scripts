@@ -7,6 +7,7 @@ open -a "News Explorer";
 open -a 1Password;
 open -a Home;
 open -a OrbStack
+open -a ChatGPT
 open -a "Microsoft Teams";
 open -a "Microsoft Outlook";
 open -a "Slack";

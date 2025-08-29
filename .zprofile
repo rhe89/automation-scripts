@@ -24,8 +24,7 @@ fi
 # Compare boot times: if different, it's a new startup
 if [[ "$BOOT_TIME" -ne "$LAST_BOOT" ]]; then
   # First terminal session after boot/wake
-  export MY_VARIABLE="some_value"
   echo "$BOOT_TIME" > "$FLAG_FILE"
 
-  sh ~/code/automation-scripts/print_macos_info.sh
+  sh ~/code/automation-scripts/print-macos-info.sh
 fi
