@@ -1,5 +1,6 @@
 open -a Mail;
 open -a Safari;
+open -a Firefox;
 open -a Music;
 open -a Discord;
 open -a Messages;
@@ -7,7 +8,7 @@ open -a "News Explorer";
 open -a 1Password;
 open -a Home;
 open -a OrbStack
-open -a ChatGPT
+open -a "Microsoft 365 Copilot"
 open -a "Microsoft Teams";
 open -a "Microsoft Outlook";
 open -a "Slack";
