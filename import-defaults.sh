@@ -19,7 +19,7 @@ defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" # Search s
 defaults write com.apple.finder "CreateDesktop" -bool true # Disable desktop icons
 defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool false # Disable drive icon on desktop
 
-defaults write com.apple.spaces "spans-displays" -bool "false" # Set displays has separate spaces to false
+defaults write com.apple.spaces "spans-displays" -bool "true" # Disable separate spaces for displays
 defaults write com.apple.dock "expose-group-apps" -bool "true" # Set group windows by application to true
 
 # Security

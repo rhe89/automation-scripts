@@ -1,6 +1,6 @@
+brew "python@3.13"
 brew "azure-cli"
 brew "bat"
-brew "python@3.13"
 brew "certbot"
 brew "certifi", link: false
 brew "docker"
