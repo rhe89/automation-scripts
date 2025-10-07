@@ -97,8 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="mate $HOME/.zshrc"
+# alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 
 # If multiple users needs to use brew, brew as alias needs to be created per user (except for user where brew first was installed)  
@@ -107,15 +107,15 @@ source $ZSH/oh-my-zsh.sh
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# alias rider="~/Library/Application Support/JetBrains/Toolbox/scripts/rider"
+# alias rider="$HOME/Library/Application Support/JetBrains/Toolbox/scripts/rider"
 
-alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias icloud="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias list-outdated="brew outdated --casks --greedy; brew outdated --formulae; mas outdated"
 alias upgrade-outdated="brew upgrade --casks --greedy; brew upgrade --formulae; mas upgrade; brew cleanup"
 alias stats="\
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Code/snippets/bash && \
+cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Code/snippets/bash && \
 sh print_macos_info.sh; \
-cd ~/"
+cd $HOME/"
 
 
 # alias docker-start-all="docker start $(docker ps -a -q)"
@@ -126,3 +126,7 @@ export PS1="$PS1
 "
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+if [ -f "$HOME/projects/aliases.zshrc" ]; then
+  source "$HOME/projects/aliases.zshrc"
+fi
