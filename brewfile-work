@@ -2,7 +2,7 @@ tap "hashicorp/tap"
 brew "python@3.13"
 brew "azure-cli"
 brew "bat"
-brew "certifi", link: false
+brew "certifi"
 brew "certbot"
 brew "docker"
 brew "docker-compose"
