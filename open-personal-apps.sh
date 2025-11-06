@@ -8,6 +8,7 @@ open -a Messages;
 open -a "News Explorer";
 open -a 1Password;
 open -a Calendar;
+open -a Home;
 
 echo "SCRIPT_DONE"
 
