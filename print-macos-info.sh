@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # macOS Uptime & System Info Dashboard on Terminal Launch
 
 format_duration() {

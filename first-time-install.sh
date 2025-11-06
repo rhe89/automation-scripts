@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 brewfileName=$1
 settingsDir=$2
 
@@ -67,4 +69,5 @@ sh "import-defaults.sh"
 
 echo "
 --------------------------------------------"
-clear
+
+echo "first-time-install done"

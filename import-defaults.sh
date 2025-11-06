@@ -1,5 +1,7 @@
 # https://macos-defaults.com
 
+#!/bin/zsh
+
 echo "Changing macOS defaults..."
 
 # Dock
@@ -66,3 +68,5 @@ defaults write -g KeyRepeat -int 2 # key repeat rate: fast
 defaults write -g InitialKeyRepeat -int 15 # delay until repeat: short
 
 killall Dock && killall Finder && killall SystemUIServer
+
+echo "import-defaults done"

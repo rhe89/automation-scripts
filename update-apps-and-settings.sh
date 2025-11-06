@@ -1,3 +1,4 @@
+#!/bin/zsh
 brewfileName=$1
 
 echo "
@@ -5,7 +6,8 @@ echo "
 
 Pulling latest version from origin"
 
-git pull
+# git config --global --add safe.directory /Users/roar/code/automation-scripts
+# git pull
 
 echo "
 --------------------------------------------
@@ -72,3 +74,5 @@ brew outdated --casks
 
 echo "
 --------------------------------------------"
+
+echo "update-apps-and-settings done"

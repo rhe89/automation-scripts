@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 settingsDir=~/Library/"Mobile Documents"/com~apple~CloudDocs/Settings
 
 # For new exports, do e.g.:
@@ -13,3 +15,5 @@ for plistFile in "$settingsDir"/*.plist; do
     # Export the defaults
     defaults export "$domainName" "$plistFile"
 done
+
+echo "export-defaults done"

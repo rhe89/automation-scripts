@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 open -a Mail;
 open -a Safari;
 open -a Music;
@@ -6,3 +8,7 @@ open -a Messages;
 open -a "News Explorer";
 open -a 1Password;
 open -a Calendar;
+
+echo "SCRIPT_DONE"
+
+echo "open-personal-apps done"

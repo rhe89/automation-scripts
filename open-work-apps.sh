@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 open -a Mail;
 open -a Safari;
 open -a Firefox;
@@ -17,3 +19,7 @@ open -a "Slack";
 open -a "Rider";
 open -a "Visual Studio Code";
 open -a iTerm;
+
+echo "SCRIPT_DONE"
+
+echo "open-work-apps done"

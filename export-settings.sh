@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 brewfileName=$1
 
 echo "
@@ -42,3 +44,5 @@ git push
 
 echo "
 --------------------------------------------"
+
+echo "export-settings done"
