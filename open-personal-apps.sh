@@ -9,6 +9,7 @@ open -a "News Explorer";
 open -a 1Password;
 open -a Calendar;
 open -a Home;
+open -a Notes;
 
 echo "SCRIPT_DONE"
 

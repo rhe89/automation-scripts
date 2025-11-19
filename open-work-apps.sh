@@ -19,6 +19,7 @@ open -a "Slack";
 open -a "Rider";
 open -a "Visual Studio Code";
 open -a iTerm;
+open -a Notes;
 
 echo "SCRIPT_DONE"
 
