@@ -2,7 +2,7 @@
 
 open -a Mail;
 open -a Safari;
-open -a Firefox;
+# open -a Firefox;
 open -a Music;
 open -a Discord;
 open -a Messages;
@@ -14,9 +14,9 @@ open -a Home;
 open -a OrbStack
 open -a "ChatGPT"
 open -a "Microsoft Teams";
-open -a "Microsoft Outlook";
+# open -a "Microsoft Outlook";
 open -a "Slack";
-open -a "Rider";
+# open -a "Rider";
 open -a "Visual Studio Code";
 open -a iTerm;
 open -a Notes;
