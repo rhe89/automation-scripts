@@ -35,9 +35,7 @@ echo "
 
 Executing 'brew update'"
 
-brew tap rhe89/aged-upgrade
-brew tap homebrew/cask --force
-brew aged-upgrade
+brew update
 
 echo "
 --------------------------------------------
@@ -58,7 +56,9 @@ echo "
 
 Updating formulaes"
 
-brew upgrade --formula
+brew tap rhe89/aged-upgrade
+brew tap homebrew/cask --force
+brew aged-upgrade --formula
 
 echo "
 --------------------------------------------
