@@ -26,9 +26,18 @@ cp -r .zprofile ~/
 echo "
 --------------------------------------------
 
+Copying .npmrc to Home-folder"
+
+cp -r .npmrc ~/
+
+echo "
+--------------------------------------------
+
 Executing 'brew update'"
 
-brew update
+brew tap rhe89/aged-upgrade
+brew tap homebrew/cask --force
+brew aged-upgrade
 
 echo "
 --------------------------------------------
