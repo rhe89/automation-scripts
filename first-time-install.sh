@@ -33,7 +33,7 @@ echo "
 
 Installing nvm"
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 echo "
 --------------------------------------------
@@ -49,9 +49,9 @@ echo "Executing '[ -s "$HOME/.nvm/bash_completion" ] && \. "$HOME/.nvm/bash_comp
 echo "
 --------------------------------------------
 
-Installing node v22"
+Installing latest LTS version of node"
 
-nvm install 22
+nvm install --lts
 
 echo "
 --------------------------------------------
