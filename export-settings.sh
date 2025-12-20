@@ -12,7 +12,7 @@ git pull
 echo "
 --------------------------------------------
 
-Copying latest .zprofile, .zshrc and .npmrc from Home-folder"
+Copying latest .-files from Home-folder"
 
 cp -r ~/.zshrc . 
 cp -r ~/.zprofile .
