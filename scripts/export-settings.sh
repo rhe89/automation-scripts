@@ -37,7 +37,7 @@ echo "
 
 Commiting and pushing changes to origin"
 
-git add *
+git add --all
 git commit -m "Settings exported"
 git push
 

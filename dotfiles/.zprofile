@@ -26,5 +26,5 @@ if [[ "$BOOT_TIME" -ne "$LAST_BOOT" ]]; then
   # First terminal session after boot/wake
   echo "$BOOT_TIME" > "$FLAG_FILE"
 
-  sh ~/code/automation-scripts/print-macos-info.sh
+  sh ~/code/macos-automation/scripts/print-macos-info.sh
 fi

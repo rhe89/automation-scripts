@@ -113,7 +113,7 @@ alias icloud="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias list-outdated="brew outdated --casks --greedy; brew outdated --formulae; mas outdated"
 alias upgrade-outdated="brew upgrade --casks --greedy; brew upgrade --formulae; mas upgrade; brew cleanup"
 alias stats="\
-cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Code/snippets/bash && \
+cd $HOME/code/macos-automation/scripts && \
 sh print_macos_info.sh; \
 cd $HOME/"
 
